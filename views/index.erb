@@ -7,11 +7,11 @@
       <th>Phone</th>
     </tr>
 
-    <% @accounts.each do |account| %>
+    <% @contacts.each do |contact| %>
       <tr>
-        <td><%= account.accountnumber %></td>
-        <td><%= account.name %></td>
-        <td><%= account.phone %></td>
+        <td><%= contact.name %></td>
+        <td><%= contact.phone %></td>
+        <td><%= contact.email %></td>
       </tr>
     <% end %>
   </table>
