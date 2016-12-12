@@ -19,12 +19,12 @@ end
 #  erb :index
 #end
 
-class Accounts < ActiveRecord::Base
-  self.table_name = 'salesforce.accounts'
+class Account < ActiveRecord::Base
+  self.table_name = 'salesforce.account'
 end
 
 get "/accounts" do
-  @accounts = Accounts.all
+  @accounts = Account.all
   erb :index
 end
 
