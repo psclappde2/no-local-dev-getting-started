@@ -5,9 +5,9 @@ require 'sinatra/activerecord'
 require './environments'
 
 
-get "/" do
-  erb :home
-end
+#get "/" do
+#  erb :home
+#end
 
 
 class Account < ActiveRecord::Base
