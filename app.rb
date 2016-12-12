@@ -18,7 +18,6 @@ end
 #  @contacts = Contact.all
 #  erb :index
 #end
-
 class Account < ActiveRecord::Base
   self.table_name = 'salesforce.account'
 end
