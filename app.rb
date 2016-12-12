@@ -6,7 +6,7 @@ require './environments'
 
 
 get "/" do
-  erb :home
+  erb :index
 end
 
 class Contact < ActiveRecord::Base
