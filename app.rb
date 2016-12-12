@@ -9,12 +9,11 @@ require './environments'
 #  erb :home
 #end
 
-
-class contact < ActiveRecord::Base
+class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.contact'
 end
 
-get "/Contacts" do
+get "/contacts" do
   @contacts = Contact.all
   erb :index
 end
